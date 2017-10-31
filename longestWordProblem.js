@@ -10,5 +10,5 @@ function findLongestWord(str) {
     }
     return [longestWord, longestWordLength];
 }
-var ans = findLongestWord("My name is himanshu Negi");
+var ans = findLongestWord("My name is Divyanshu Negi");
 console.log(ans[0], ans[1]);

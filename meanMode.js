@@ -30,7 +30,11 @@ function meanMode(arr) {
     //     }
     // }
     mean = mean / arr.length;
-    return mode;
+    if (mean == mode) {
+        return mode;
+    } else {
+        return false;
+    }
 }
 
 function findCountInArray(number, arr) {
@@ -45,4 +49,4 @@ function findCountInArray(number, arr) {
     console.log("----------------------------");
     return count;
 }
-document.write(meanMode([1, 1, 1, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 31, 2, 2, 2, 2, 2, 2, 2, 2, 2]));
+document.write(meanMode([1, 3, 3, 3, 5]));

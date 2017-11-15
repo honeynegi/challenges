@@ -15,8 +15,9 @@ function PrimeTime(num) {
     if (num == 2) {
         return true;
     }
-
+    console.log(checkTo);
     for (i = 2; i < checkTo + 1 && res == true; i++) {
+        console.log(i);
         if (num % i === 0) {
             res = false;
         }
@@ -24,4 +25,4 @@ function PrimeTime(num) {
 
     return res;
 }
-document.write(PrimeTime(31));
+document.write(PrimeTime(80));

@@ -1,4 +1,23 @@
 <html>
-<script src="prime.js"></script>
+
+<body>
+    <input type="text" id="num1"=>give me input</input><br>
+    <input type="text" id="num2"=>give me input</input><br>
+    <input type="text" id="calc"=>give me input</input><br>
+    <script src="calculator.js"></script>
+    <form>
+        <button type="button" onclick="test()">ans</button>
+    </form>
+
+</body>
+
+<script>
+    function test() {
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        var calc = document.getElementById("calc").value;
+        console.log(calculator(num1, num2, calc));
+    }
+</script>
 
 </html>
